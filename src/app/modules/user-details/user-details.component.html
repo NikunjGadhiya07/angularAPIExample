@@ -1,0 +1,16 @@
+<div class="row mt-4 ml-3">
+<div class="col-6">
+    <img src={{userDetails.avatar_url}} class="img-fluid rounded">
+</div>
+<div class="col-6">
+        <h2>{{userDetails.login}}</h2>
+        <p><span>url: - </span><a href="{{userDetails.html_url}}" target="blank">{{userDetails.html_url}}</a></p>
+    </div>
+</div>
+
+<div class="row">
+        <div class="col-6">
+            <p class="error">{{apiError}}</p>
+        </div>
+    </div>
+<button (click)="onBack()" class="btn btn-primary ml-4">go back</button>
